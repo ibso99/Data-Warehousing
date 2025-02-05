@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: telegram_data
+    schema: public  # Replace with your schema name
+    tables:
+      - name: medical_telegram_messages
+        description: "Raw table containing medical telegram messages."

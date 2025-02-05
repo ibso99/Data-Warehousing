@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_medical_telegram_messages
+    description: "A staging model for medical telegram messages."
+    columns:
+      - name: id
+        description: "The unique identifier for the message."
+        tests:
+          - unique
+          - not_null
+      - name: channel_title
+        description: "The title of the channel where the message was posted."
+        tests:
+          - not_null
+      - name: channel_username
+        description: "The username of the channel."
+      - name: message_id
+        description: "The unique identifier for the message within the channel."
+        tests:
+          - not_null
+      - name: message_txt
+        description: "The text content of the message."

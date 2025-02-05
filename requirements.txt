@@ -1,0 +1,4 @@
+telethon
+pandas
+dbt-core
+dbt-postgres
